@@ -1,0 +1,105 @@
+*{
+    font-family: "Rimouski";
+}
+
+body{
+    background-color: #293251;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:2px solid red; */
+    height:100vh;
+}
+
+.container{
+    height:50vh;
+    width:25vw;
+    background-color:white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.head{
+    margin-top:2vh;
+    font-weight:bold;
+    font-size:5vh;
+}
+
+
+.notifi{
+    margin-top:2vh;
+    border:2px solid gray;
+    background-color:lightgray;
+    border-radius:10px;
+    width:99%;
+    height:5vh;
+    color:red;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+}
+a{
+    font-size:5vh;
+    font-weight:bolder;
+    color:black;
+}
+.dis{
+    margin-top:2vh;
+    font-size: 3vh;
+}
+.location{
+    margin-top:1vh;
+    font-size:3vh;
+}
+a{
+    text-decoration:none;
+}
+.center{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.hide{
+    display:none;
+}
+
+@media only screen and (max-width: 750px) {
+    /* body {
+      background-color: yellow;
+    } */
+    .container{
+        width:40vw;
+    }
+    .head{
+        font-size:4vh;
+    }
+    .dis,.location{
+        font-size: 2vh;
+    }
+  }
+
+
+@media only screen and (max-width: 580px) {
+    /* body {
+      background-color: lightblue;
+    } */
+    .container{
+        width:45vw;
+    }
+    .head{
+        font-size:4vh;
+    }
+    .dis,.location{
+        font-size: 2vh;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    /* body {
+      background-color: green;
+    } */
+    .container{
+        width:65vw;
+    }
+  }
