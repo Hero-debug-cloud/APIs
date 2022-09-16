@@ -1,0 +1,117 @@
+ body{
+     background-color:  	rgb(48,48,48);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height:100vh;
+ }
+ .search_bar{
+     /* border: 2px solid red; */
+     background-color:  rgb(99, 97, 97);
+     height: 10vh;
+     width: 40vw;
+     position: relative;
+     bottom: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+ }
+ .search{
+     height:2vh;
+     width:18vw;
+     border-radius: 10px;
+     padding: 10px;
+ }
+ .submit{
+     margin-left: 12px;
+     padding:5px;
+     width: 6.5vw;
+     border-radius: 10px;
+ }
+
+ .result{
+     /* border:2px solid red; */
+     position: relative;
+     /* bottom: 14vh; */
+     height:62vh;
+     width: 50vw;
+     display: flex;
+     background-color: rgb(126, 122, 122);
+     color:white;
+     border-radius: 20px;
+ }
+ .part-1{
+/* border:2px solid red; */
+width:45%;
+ }
+ .user_image{
+     height:35vh;
+     width: auto;
+     margin-left: 2.5vw;
+     margin-top: 15px;
+     border-radius: 50%;
+     text-align: center;
+ }
+ .name{
+     margin-left: 2.5vw;
+     margin-top: 2vh;
+     font-size:2.5vh;
+     font-weight: bolder;
+     letter-spacing: 0.02em;
+ }
+ .user_name{
+     margin-left: 2.5vw;
+     margin-top: 5px;
+     font-size: medium;
+     letter-spacing: 0.09em;
+ }
+ .people{
+     /* border:2px solid red; */
+     display: flex;
+     margin-top: 5vh;
+     margin-left: 2.5vw;
+ }
+ .follow{
+   margin-right: 6px;
+ }
+ .part-2{
+     /* border:2px solid red; */
+     width:60%;
+     margin-left: 6vw;
+     margin-top: 5vh;
+ }
+ .all{
+     margin-bottom: 10px;
+     font-weight:bolder;
+     /* border: 2px solid red; */
+ }
+#create,#update,#bio,#blog{
+    font-size: small;
+}
+.linking{
+    height:8vh;
+    border-radius: 20px;
+    width: 6vw;
+    position: relative;
+    top:12vh;
+    left: 4vw;
+}
+.fail_to_load{
+    /* border:2px solid red; */
+    font-size: 5vh;
+    width: 40vw;
+    text-align: center;
+    color:red;
+    font-weight: bolder;
+    
+}
+
+.hidden{
+    display: none;
+}
+.shift{
+    position: relative;
+    bottom: 33vh;
+}
