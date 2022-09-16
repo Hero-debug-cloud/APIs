@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hero Vinay</title>
+</head>
+
+<body>
+    <h1>Top Scorers</h1>
+    <div class="container ">
+
+        <div class="season">
+            <span class="mb">Enter Season Year</span><br>
+            <input type="text" placeholder="Season Year" onchange="set(value,name)" name="season">
+        </div>
+        <div class="league">
+            <span class="mb">Enter league Id Number</span><br>
+            <input type="text" placeholder="League Id" onchange="set(value,name)" name="league">
+        </div>
+        <button class="submit" onclick="start()">Search</button>
+    </div>
+    <div class="result">
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

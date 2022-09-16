@@ -1,0 +1,70 @@
+*{
+    padding:0;
+    margin:0;
+}
+h1{
+    text-align:center;
+    margin:5vh 0vh;
+   
+}
+body{
+    display:flex;
+    /* height: 98vh; */
+    width:98vw;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: column;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20vh;
+}
+.league,.season{
+    padding:15px;
+}
+.mb{
+    margin-bottom: 10vh;
+}
+input{
+    margin-top:1vh;
+    padding:5px;
+}
+button{
+    padding:10px;
+}
+/* for result container */
+.result{
+    /* margin-bottom:20vh; */
+    display: flex;
+    flex-wrap:wrap;
+    /* justify-content:space-around; */
+    /* border:1px solid black; */
+    /* height:80vh; */
+    width:80vw;
+}
+
+/* for hiding things */
+
+.hidden{
+    display:none;
+}
+
+/* card styling */
+
+.card{
+    border:1px solid black;
+    border-radius:20px;
+    height: 250px;
+    width:210px;
+    margin:10px 28px;
+}
+.img_card{
+    height:140px;
+    width:210px;
+    border-radius: 20px;
+}
+.cent{
+    text-align: center;
+    margin-bottom:2px;
+}
