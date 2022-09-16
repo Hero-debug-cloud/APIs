@@ -4,21 +4,27 @@
     "link":"./Advice_Generator_API/index.html"
     },
     {
-        "name":"Country_data_API"
+        "name":"Country_data_API",
+        "link":"Country_data_API/index.html"
     },
     {
-        "name":"Football_API "
+        "name":"Football_API ",
+        "link":"Football_API/index.html"
     },
     {
-        "name":"Github_User_Search_API "
+        "name":"Github_User_Search_API ",
+        "link":"Github_User_Search_API/index.html"
     },
     {
-        "name":"Movie_Details_API "
+        "name":"Movie_Details_API ",
+        "link":"Movie_Details_API/index.html"
     },
     {
-        "name":"Search_gifs_API "
+        "name":"Search_gifs_API",
+        "link":"Search_gifs_API/index.html"
     },
     {
-        "name":"Weather_API "
+        "name":"Weather_API",
+        "link":"Weather_API/index.html"
     }
 ]
