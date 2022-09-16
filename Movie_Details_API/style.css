@@ -1,0 +1,113 @@
+ body{
+     background-color:  	rgb(48,48,48);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height:100vh;
+ }
+ .search_bar{
+     /* border: 2px solid red; */
+     background-color:  rgb(99, 97, 97);
+     height: 10vh;
+     width: 40vw;
+     position: relative;
+     bottom: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+ }
+ .search{
+     height:2vh;
+     width:18vw;
+     border-radius: 10px;
+     padding: 10px;
+ }
+ .submit{
+     margin-left: 12px;
+     padding:5px;
+     width: 6.5vw;
+     border-radius: 10px;
+ }
+.result{
+    margin-right: 10vw;
+    position: relative;
+    height:55vh;
+    width:62vh;
+}
+.card{
+    position: absolute;
+    width:40vw;
+    height:55vh;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    background-color: white;
+    border-radius: 10px;
+}
+.rotating{
+    transform: rotateY(180deg); 
+}
+.back,.front{
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    color:green;
+    /* text-align: center;  */
+    border-radius: 10px;
+}
+.back{
+    transform: rotateY(180deg);
+    color:red;
+    display: flex;
+    border-radius: 10px;
+}
+
+.image{
+    /* width:31vw;
+    height:55vh; */
+    height: 100%;
+    width: 100%;
+}
+.part-1{
+    /* display: flex; */
+    width: 50%;
+    /* border:2px solid red; */
+}
+._1,._2{
+    margin: 5vh 8px;
+    color:gray;
+    font-weight: bolder;
+}
+._2{
+    margin-top:2vh;
+}
+.title,.date,.runtime,.genre,.director,.plot,.lang,.country,.rating,.type{
+    color:black;
+    font-size: 14px;
+}
+.part-2{
+    width: 50%;
+}
+ 
+
+
+
+.fail_to_load{
+    /* border:2px solid red; */
+    font-size: 5vh;
+    width: 40vw;
+    text-align: center;
+    color:red;
+    font-weight: bolder;
+    
+}
+
+.hidden{
+    display: none;
+}
+.shift{
+    position: relative;
+    bottom: 13vh;
+}
