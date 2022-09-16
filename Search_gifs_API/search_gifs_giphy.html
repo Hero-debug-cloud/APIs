@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript:- Animation</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            height:100px;
+            width:100%;
+            /* border: 2px solid red; */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .js-input{
+            height:30%;
+            margin:0px 10px;
+            width:30%;
+           
+        }
+        .js-go{
+            width:7%;
+            height:30%;
+            font-size: 20px;
+        }
+        .container-2{
+            height:auto;
+            width:100%;
+            /* border:2px solid red; */
+            margin-left:12%;
+            margin-top:5%;
+            margin-right:3%;
+            float:left;
+            display:block;
+        }
+        .images{
+            margin:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" class="js-input input" value="Enter">
+        <button class="js-go">Go!</button>
+    </div>
+    <div class="container-2">
+     
+    </div>
+<script>
+//    var url="http://api.giphy.com/v1/gifs/search?api_key=uFPFCYthYPzwlM4vbjiWsiTXyblazH6b&q=";
+   //grab the input
+  
+   var button=document.querySelector(".js-go");
+   button.addEventListener('click',op);
+   var b=document.querySelector(".input");
+   b.addEventListener('keyup',function(e){
+     //if user hit enter 
+     if(e.which===13){
+        op();
+     }
+     
+   });
+
+   //displaying images 
+   function push(input){
+       var response=JSON.parse(input);
+       var imageurls=response.data;
+       imageurls.forEach(function(e){
+           var src=e.images.fixed_height.url;
+        //    console.log(src);
+           var container=document.querySelector(".container-2");
+           container.innerHTML+="<img src=\""+src+"\" class=\"images\">";
+       });
+   }
+   function op(){
+    var container=document.querySelector(".container-2");
+    container.innerHTML="";
+     let input=document.querySelector(".js-input").value;
+     var url="http://api.giphy.com/v1/gifs/search?api_key=uFPFCYthYPzwlM4vbjiWsiTXyblazH6b&q=";
+     url+=input;
+     
+     console.log("this is me: click");
+     console.log(url);
+     //AJAX Request
+   var GiphyAJAXCall=new XMLHttpRequest();
+   GiphyAJAXCall.open('GET',url);
+   GiphyAJAXCall.send();
+
+   GiphyAJAXCall.addEventListener('load',function(e){
+       var data=e.target.response;
+    //    console.log(data);
+       push(data);
+   });
+   }
+
+</script>
+   
+</body>
+
+</html>
